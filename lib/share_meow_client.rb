@@ -4,7 +4,6 @@ require 'openssl'
 require 'share_meow_client/version'
 require 'helpers/configuration'
 
-
 module ShareMeowClient
   extend Configuration
 
@@ -42,6 +41,6 @@ module ShareMeowClient
     hmac = OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha1'.freeze), secret_key, encoded_params)
     hmac_digest = Base64.urlsafe_encode64([hmac].pack('H*'.freeze))
 
-    "#{ base_url }/v1/#{ encoded_params }/#{ hmac_digest }/image.jpg"
+    "#{base_url}/v1/#{encoded_params}/#{hmac_digest}/image.jpg"
   end
 end
