@@ -1,4 +1,5 @@
 # ShareMeowClient :heart_eyes_cat:
+[![Build Status](https://travis-ci.org/producthunt/ShareMeowClient.svg?branch=master)](https://travis-ci.org/producthunt/ShareMeowClient)
 
 Ruby client for easily generating ShareMeow URL's. :star:
 
