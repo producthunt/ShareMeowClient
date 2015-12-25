@@ -6,3 +6,6 @@ before_install: gem install bundler -v 1.10.6
 script:
   - bundle exec rspec
   - bundle exec rubocop --config .rubocop.yml
+addons:
+  code_climate:
+    repo_token: f4a10a44f2e0b05a4709f181911dd2e0159d3f0703dc5454fdb7117b9a067af4
