@@ -1,7 +1,8 @@
 # ShareMeowClient :heart_eyes_cat:
 [![Build Status](https://travis-ci.org/producthunt/ShareMeowClient.svg?branch=master)](https://travis-ci.org/producthunt/ShareMeowClient)
 [![Test Coverage](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/coverage.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient/coverage)
-[![Code Climate](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/gpa.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient)
+[![Code Climate](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/gpa.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient)  
+
 Ruby client for easily generating ShareMeow URL's. :star:
 
 Learn more about [ShareMeow](https://github.com/producthunt/ShareMeow).
