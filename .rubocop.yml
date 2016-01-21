@@ -1,5 +1,7 @@
 Documentation:
   Enabled: false
+FrozenStringLiteralComment:
+  Enabled: false
 Metrics/LineLength:
   Max: 140
 AllCops:
