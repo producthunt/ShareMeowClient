@@ -3,5 +3,9 @@ Documentation:
 Metrics/LineLength:
   Max: 140
 AllCops:
+  TargetRubyVersions:
+    - 2.1
+    - 2.2
+    - 2.3
   Exclude:
     - 'bin/*'
