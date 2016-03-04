@@ -16,12 +16,13 @@ describe ShareMeowClient do
       expect(described_class.secret_key).to eq 'test'
     end
 
-    it 'throws an exception when setting a nil value' do
+    it 'throws an exception when set to a nil value' do
+      ShareMeowClient.configuration do |config|
+        config.base_url = nil
+      end
+
       expect do
-        ShareMeowClient.configuration do |config|
-          config.base_url = nil
-          config.secret_key = nil
-        end
+        ShareMeowClient.base_url
       end.to raise_exception.with_message(/ShareMeowClient.base_url was not set. Please set it in your ShareMeowClient initializer/)
     end
   end
