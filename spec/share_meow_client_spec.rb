@@ -15,6 +15,15 @@ describe ShareMeowClient do
       expect(described_class.base_url).to eq 'https://www.producthunt.com'
       expect(described_class.secret_key).to eq 'test'
     end
+
+    it 'throws an exception when setting a nil value' do
+      expect do
+        ShareMeowClient.configuration do |config|
+          config.base_url = nil
+          config.secret_key = nil
+        end
+      end.to raise_exception.with_message(/ShareMeowClient.base_url was not set. Please set it in your ShareMeowClient initializer/)
+    end
   end
 
   describe '.image_url' do
