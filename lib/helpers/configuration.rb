@@ -24,6 +24,7 @@ module Configuration
     class_variable_set("@@#{name}", default)
 
     define_class_method "#{name}=" do |value|
+      raise "#{self}.#{name} was not set. Please set it in your #{self} initializer." if value.nil?
       class_variable_set("@@#{name}", value)
     end
 
