@@ -1,7 +1,7 @@
 # ShareMeowClient :heart_eyes_cat:
 [![Build Status](https://travis-ci.org/producthunt/ShareMeowClient.svg?branch=master)](https://travis-ci.org/producthunt/ShareMeowClient)
 [![Test Coverage](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/coverage.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient/coverage)
-[![Code Climate](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/gpa.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient)  
+[![Code Climate](https://codeclimate.com/github/producthunt/ShareMeowClient/badges/gpa.svg)](https://codeclimate.com/github/producthunt/ShareMeowClient)
 
 Ruby client for easily generating ShareMeow URL's. :star:
 
@@ -29,7 +29,7 @@ Or install it yourself as:
 First, you'll need to set the configuration variables in an initializer.
 
 ```Ruby
-# config/initializers/share_meow.rb
+# config/initializers/share_meow_client.rb
 ShareMeowClient.configuration do |config|
   config.base_url = 'https://your-share-meow.example.com'
   config.secret_key = 'a_very_long_secret_key'
